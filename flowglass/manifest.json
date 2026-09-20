@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "mode": "native-static",
+  "bundle": "flowglass-en",
+  "plugins": [
+    {
+      "id": "toolbox",
+      "name": "Flowglass framework (Host registry and Client shell)",
+      "platform": "host+client",
+      "order": 1,
+      "purpose": "Provides the Host registry, Client UI shell, settings, and panel transport used by Flowglass."
+    },
+    {
+      "id": "flow",
+      "name": "Flowglass session visualization (Host-only)",
+      "platform": "host-only",
+      "order": 2,
+      "purpose": "Renders live session execution, tool calls, subagents, concurrent branches, history, and Flow Zoom views."
+    }
+  ]
+}

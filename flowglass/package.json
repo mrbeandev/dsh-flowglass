@@ -1,0 +1,67 @@
+{
+  "name": "dsh-flowglass-en",
+  "version": "0.6.1",
+  "description": "Visualize live session execution, tool calls, subagents, and concurrent branches in DeepSeek Harness.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./remote": "./lib/remote.js",
+    "./package.json": "./package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrbeandev/dsh-flowglass.git"
+  },
+  "license": "MIT",
+  "author": "mrbeandev",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "toolbox",
+    "flowglass-en"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-session",
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-api-workspace-controller",
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-client-ui-workspace",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-sidebar-right"
+      ]
+    }
+  },
+  "files": [
+    "lib/**",
+    "manifest.json",
+    "BUILDINFO.json",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.19"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-typert-protocol": "^0.1.5-rc.1 || ^0.1.6-alpha.2",
+    "@deepseek-ai/dsh-client-ui-primitives": "^0.1.5-rc.1 || ^0.1.6-alpha.2",
+    "dsh-better-sidebar": ">=0.19.0",
+    "react-dom": "^18.3.1",
+    "react": "^18.3.1"
+  },
+  "peerDependenciesMeta": {
+    "dsh-better-sidebar": {
+      "optional": true
+    }
+  }
+}

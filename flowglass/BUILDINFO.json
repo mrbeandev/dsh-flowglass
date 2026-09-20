@@ -1,0 +1,52 @@
+{
+  "bundleId": "flowglass-en",
+  "packageName": "dsh-flowglass-en",
+  "version": "0.6.1",
+  "displayName": "Flowglass",
+  "mode": "native-static",
+  "dynamicApprovalRequired": false,
+  "componentRows": [],
+  "features": {
+    "explicit": [
+      "flow"
+    ],
+    "dependencyAdded": [],
+    "all": [
+      "toolbox",
+      "flow"
+    ]
+  },
+  "fingerprint": "4b2154e01a411d33",
+  "builderVersion": "2",
+  "sourceHashes": {
+    "plugins/flow/tool.js": "3de1887c7f84b7826a1195913f6f93adee9b6f218d8133d1f5381fd94105a81a",
+    "plugins/toolbox/client.js": "7dd704569c20514302df24f6e21212ca41a0b6d2527e40660bdf23f80be5d3da",
+    "plugins/toolbox/host.js": "c3c5a0f95f0d9236d9b9b630a72ec1de55fb201bb174234d877bc0943bf8a709",
+    "shared/host.js": "3bb1909bb5417f0bb44654fc98b8818bf8628d191f66766ccf44bd82fdb30d93",
+    "shared/runtime.js": "11b0ebe375a11549bc157ad0adf03dc58f27432bfb2e47ae7e8299c57e70ea66"
+  },
+  "profile": {
+    "mode": "static-bundle",
+    "bundleId": "flowglass-en",
+    "displayName": "Flowglass",
+    "registryService": "toolboxRegistryFlowglassEn",
+    "artifactService": "toolboxArtifactsFlowglassEn",
+    "remoteService": "toolboxNativeFlowglassEn",
+    "remoteNamespace": "toolboxNativeFlowglassEn",
+    "rpcPrefix": "toolbox.flowglass-en",
+    "storagePrefix": "dsh.toolbox.flowglass-en",
+    "eventPrefix": "tb-flowglass-en",
+    "slotPrefix": "toolbox-flowglass-en",
+    "domId": "flowglass-en",
+    "hostIdPrefix": "toolbox-host-flowglass-en",
+    "dataDir": ".dsh-dynamic-toolbox",
+    "capabilities": {
+      "diskReload": false,
+      "rebuildFromDisk": false,
+      "pluginDefaults": false,
+      "pluginRestart": false,
+      "aiUsage": false,
+      "managePlugins": false
+    }
+  }
+}

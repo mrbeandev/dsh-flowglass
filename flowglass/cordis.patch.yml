@@ -1,0 +1,4 @@
+# dsh-flowglass-en - native static Host/Client Flowglass patch layer
+- insert:
+    - id: toolbox-bundle-flowglass-en
+      name: 'dsh-flowglass-en'

@@ -1,0 +1,21 @@
+# Dependencies and generated build output
+node_modules/
+dist/
+
+# Local package archives
+*.tgz
+
+# Local DSH/runtime state
+.dsh-dynamic-toolbox/
+.scratch/
+.memory-project.json
+
+# Credentials
+.env
+.env.*
+
+# Logs, system files, and editor artifacts
+*.log
+Thumbs.db
+Desktop.ini
+.DS_Store
