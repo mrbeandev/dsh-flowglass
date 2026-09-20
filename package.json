@@ -13,11 +13,19 @@
   "scripts": {
     "build": "node scripts/build-toolbox-bundle.mjs --flow --version 0.6.1 --clean && node scripts/sync-flowglass.mjs",
     "check:english": "node scripts/check-english-only.mjs",
-    "test": "npm run build && npm run check:english && node scripts/verify-bundle.mjs flowglass --pack"
+    "test": "npm run build && npm run check:english && node scripts/verify-bundle.mjs flowglass --pack",
+    "prepublishOnly": "npm test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mrbeandev/dsh-flowglass.git"
+    "url": "git+https://github.com/mrbeandev/dsh-flowglass.git"
+  },
+  "homepage": "https://github.com/mrbeandev/dsh-flowglass#readme",
+  "bugs": {
+    "url": "https://github.com/mrbeandev/dsh-flowglass/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "license": "MIT",
   "author": "mrbeandev",
